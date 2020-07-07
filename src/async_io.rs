@@ -62,7 +62,7 @@ use crate::task::Task;
 /// # std::io::Result::Ok(()) });
 /// ```
 ///
-/// If a type does but its reference doesn't implement [`AsyncRead`] and [`AsyncWrite`], wrap it in
+/// If a type does implement [`AsyncRead`] and [`AsyncWrite`] but its reference doesn't, then wrap it in
 /// [piper]'s `Mutex`:
 ///
 /// ```no_run
